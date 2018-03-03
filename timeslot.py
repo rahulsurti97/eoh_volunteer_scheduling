@@ -7,6 +7,7 @@ class Timeslot(object):
         self.length = length
         self.capacity = capacity
         self.spots_left = capacity
+        self.volunteers_assigned = set()
 
     def to_string(self):
         if self.length == 0:
